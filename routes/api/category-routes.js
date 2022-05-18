@@ -54,7 +54,7 @@ router.put("/:id", async (req, res) => {
     },
     {where: {id:req.params.id}}
     );
-    res.status(200).json('Success ID has been updated!');
+    res.status(200).json('Success data has been updated!');
   } catch (err) {
     res.status(500).json(err);
   }
